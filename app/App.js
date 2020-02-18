@@ -14,11 +14,13 @@ import {
   View,
   Text,
   StatusBar,
+  Button,
 } from 'react-native';
+
+import ToastExample from './modules/ToastExample';
 
 import {
   Header,
-  LearnMoreLinks,
   Colors,
   DebugInstructions,
   ReloadInstructions,
@@ -64,7 +66,12 @@ const App: () => React$Node = () => {
                 Read the docs to discover what to do next:
               </Text>
             </View>
-            <LearnMoreLinks />
+            <Button
+                onPress={() => {
+                  ToastExample.show("你点击了按钮！", ToastExample.LONG);
+                }}
+                title="点我！"
+            />
           </View>
         </ScrollView>
       </SafeAreaView>
