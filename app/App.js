@@ -22,8 +22,6 @@ import ToastExample from './modules/ToastExample';
 import {
   Header,
   Colors,
-  DebugInstructions,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
